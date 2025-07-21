@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const stripe = require("stripe")('process.env.STRIPE_SECRET'); // Ensure you have your Stripe secret key in .env
+const stripe = require("stripe")('add-key-here'); // Ensure you have your Stripe secret key in .env
 app.use(express.json());
 app.use(cors())
 
