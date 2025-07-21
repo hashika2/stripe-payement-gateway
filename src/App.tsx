@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Success from "./routes/success";
 import Cancel from "./routes/cancel";
 
-const stripePromise = loadStripe("pk_test_51RnCMmISiyerA7oPaqGfvhdzHwH50FeQf05fyvwz8fiRQaJuj8gJeAZJObbX8jphomiYNqvzZaAgGx39EImyew0300DMFGKMPe");
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY || "" );
 
 const App: React.FC = () => {
   return (
