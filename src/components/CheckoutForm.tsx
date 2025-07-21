@@ -15,7 +15,7 @@ const CheckoutForm: React.FC = () => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    /** this comment section for direct payment process */
+    /** this comment section for direct payment process  **/
 
     // if (!stripe || !elements) return;
 
